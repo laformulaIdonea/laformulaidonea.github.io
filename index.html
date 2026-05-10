@@ -6,7 +6,12 @@
 <title>La Fórmula IDÓNEA — Comunicación Inmobiliaria</title>
 <meta name="description" content="Comunicación y creación de contenido para emprendedores e inmobiliarias en Uruguay.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -25,6 +30,65 @@ html{scroll-behavior:smooth}
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 body{font-family:'Lato',sans-serif;font-weight:300;color:var(--negro);background:#fff;line-height:1.65;overflow-x:hidden}
@@ -66,7 +130,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--negro);padding:16px 6vw;d
 .sobre h2{font-family:'Playfair Display',serif;font-size:clamp(26px,3vw,40px);line-height:1.15;color:var(--negro);font-weight:400}
 .sobre-derecha p{font-size:15px;color:#5a4e45;line-height:1.85;margin-bottom:18px}
 .sobre-derecha p:last-child{margin-bottom:0}
-.highlight-bar{border-left:2.5px solid var(--durazno);padding:4px 0 4px 20px;margin:24px 0;font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:var(--negro);line-height:1.55}
+.highlight-bar{border-left:2.5px solid var(--durazno);padding:4px 0 4px 20px;margin:20px 0;font-family:'Lato';sans-serif;font-weight: 500;font-style:italic ;font-size:17px;color:var(--negro);line-height:1.55}
 
 /* CLIENTES */
 .clientes{background:var(--negro);padding:100px 8vw;color:#fff}
@@ -103,6 +167,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--negro);padding:16px 6vw;d
 
 
 /* CONTACTO */
+.btn-saber-mass{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;font-size:11px;font-family:'Lato',sans-serif;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--crema);border:1px solid rgba(255,239,212,0.18);transition:all 0.25s;align-self:flex-start}
 .contacto{padding:100px 8vw;background:var(--negro);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .contacto-text h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);color:var(--crema);margin-bottom:16px;line-height:1.1;font-weight:400}
 .contacto-text p{font-size:15px;color:var(--muted-dark);line-height:1.75}
@@ -173,8 +238,8 @@ footer p{font-size:12px;color:rgba(255,239,212,0.2);font-family:'Lato',sans-seri
 
 <section class="sobre" id="sobre">
   <div class="sobre-izq">
-    <p class="section-label">Quién soy</p>
-    <h2>Soy Camila<br>Morales de León</h2>
+    <p class="section-label"><br><br><br><br></p>
+    <h2>Hola, <br>soy Camila</h2>
   </div>
   <div class="sobre-derecha">
     <p>Lic. en Comunicación, Filmmaker y emprendedora. Trabajé de forma remota para el mercado inmobiliario de Estados Unidos, con Realtors de Keller Williams y EXP Realty, donde aprendí que la diferencia entre un agente común y uno referente no está en las propiedades que maneja, sino en cómo se comunica.</p>
@@ -232,8 +297,13 @@ footer p{font-size:12px;color:rgba(255,239,212,0.2);font-family:'Lato',sans-seri
 <section class="contacto" id="contacto">
   <div class="contacto-text">
     <p class="section-label">Contacto</p>
-    <h2>¿Agendamos<br>15 minutos?</h2>
-    <p>Sin compromiso. Un diagnóstico rápido de tu presencia digital y te contamos cómo podemos ayudarte. Si tiene sentido trabajar juntos, lo vemos. Si no, te vas con claridad igual.</p>
+    <h2>¿Nos das<br> 20 minutos?</h2><br>
+    <p>Animate a contactarnos. Te ofrecemos un diagnóstico express de tu presencia digital o la duda que traigas. Lo hablamos sin compromiso y pero te llevas un pdf con valor real, ideal para implementar.<br>Pero te aseguramos: la fórmula idónea la tenemos acá <br> ;-)
+ </p>
+<br>
+<br>
+<a href="https://wa.me/59898584929?text=Hola!%20Quiero%20agendar%20mi%20diagnóstico%20express %20" class="btn-saber-mas">Agendate →</a>
+    </div>
   </div>
   <div class="contacto-links">
     <a href="https://wa.me/59898584929" class="contact-item">
